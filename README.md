@@ -73,13 +73,14 @@ Model, Fire OS and Android version, CPU, display, storage, memory, network and u
 A screenshot of what’s on the TV right now
 Power controls: reboot, reboot to recovery or bootloader, shut down, force-stop all apps
 Device Report button (see Extra Tools)
+
 Health Check tab
 
 A health score with a list of issues and one-click fixes (or Fix All)
 Live CPU, memory, storage and temperature tiles
 The apps using the most memory right now
-🧹 Debloat
-Presets tab
+
+🧹 Debloat Presets tab
 
 One-click bundles of changes graded Safe, Recommended, Aggressive and Extreme
 Search and filter by severity; restore any preset just as easily
@@ -90,6 +91,7 @@ Every Amazon service FireForge knows about, grouped into categories (telemetry, 
 Filter by risk, search by name or package, tick what you want, then Disable, Remove or Restore
 Export / Import profiles (.fireforge.json) to reuse your picks on another stick or share them
 If Fire OS refuses to disable something, FireForge offers to remove it for the current user instead (backing the APK up first), and remembers which packages are protected so you aren’t asked again
+
 ⚡ Optimize
 One-click tune-ups that work on every model:
 
@@ -97,11 +99,13 @@ Balanced Boost – 0.5× animations, stops background apps, clears app caches
 Maximum Performance – animations off, telemetry and ad services disabled, ad tracking limited, background Wi-Fi scans off
 Revert to Stock – puts everything back
 A live Current State card shows how the device is tuned right now
+
 📱 App Manager
 Every installed app with status, type (system or user), size and a risk rating
 Filter, search and sort by any column
 Disable, Enable / Restore, Remove (with an automatic APK backup) and Clear Data — one app or many at once
 A storage summary showing how much space apps use
+
 🛍️ App Store
 App Store tab — popular apps, always from the official source, never a mirror site. Filter by category, search, or show only installed apps.
 
@@ -119,50 +123,54 @@ Sideload APKs tab
 
 Drag APK files onto the page (or pick them) and install them all in one go
 Failed installs stay in the list with the reason, ready to retry
+
 🎮 Remote Control
 Live view of the TV screen next to a full remote: d-pad, Back, Home, Menu, rewind / play-pause / fast-forward, volume, mute, sleep, wake and Settings
 Type on the TV – send text to the selected box (much faster than the on-screen keyboard for passwords and URLs), plus Delete and Enter keys
 Save Screenshot to your Pictures folder
 Keyboard control – while this page is open, use the arrow keys, Enter, Backspace (Back), Home and Space (play/pause)
+
 📁 File Transfer
 Browse the Fire TV’s storage
 Drag files from your PC to upload them, or download files back to the PC
 Create folders and delete files
+
 🛡️ Shields & DNS
 Each card shows the current setting and lets you switch it on or off:
-
 Fire OS Update Shield – stops Amazon pushing system updates that can undo debloating (and can be restored any time)
 Encrypted Private DNS – AdGuard, Mullvad, Cloudflare, Quad9, Google or your own provider (for example NextDNS)
 Interest-based ads, connectivity check pings and background Wi-Fi scanning
 A shortcut to the TV’s own privacy settings (usage data and content recognition)
+
 💾 Backup & Restore
 Snapshots record exactly which apps are disabled or removed; restore one to roll the device back to that state
 APK backups are saved to your PC automatically before any app is removed
+
 🔓 Root & Recovery
 FireForge never runs exploits, roots or flashes anything automatically — that’s model-specific and doing it blindly can brick a device. Instead it:
-
 Detects the model and codename, Fire OS and Android version, security patch, bootloader lock state, root (Magisk) and SELinux
 Shows a pre-root checklist: firmware noted, updates blocked, snapshot taken, fastboot available
 Opens the right community guide for your exact model, and links to official firmware and the XDA forum
 Reboots to recovery or the bootloader, and checks fastboot status (when fastboot.exe is in the adb folder)
 Root Tools (rooted devices only): test root access, and disable apps Fire OS refused to switch off
 Copy Info puts your device details on the clipboard, ready to paste when asking for help
+
 🧰 Extra Tools
 Apps & display
-
 Launch or force-stop any installed app
 Custom launcher – install a third-party home screen, try to make it the default, or go back to Amazon’s
 TV shortcuts: Fire TV settings, network settings, developer options and restart the home screen
 Interface animation speed, display resolution and screen density (DPI) overrides
 Batch & maintenance
-
 Batch Mode – pick a preset or profile, Balanced Boost and/or the privacy shields, tick your saved Fire TVs, and FireForge applies it to each one in turn, then reconnects to the device you started on
 Scheduled Maintenance – every 1–24 hours while FireForge is open: clears caches, stops background apps, puts shield settings back, and re-disables or re-removes apps that an Amazon update switched back on. It compares against a saved baseline for each device.
 Device Report – a one-page HTML summary of a device (model, Fire OS, storage, memory, every disabled or removed app, and the state of each shield). Print it to PDF from your browser. Serial number, MAC address, IP and Wi-Fi name are left out so it’s safe to share.
+
 🖥️ Terminal & Logs
 Run your own ADB shell commands
 See everything FireForge does, with timestamps
 Read the Fire TV’s own live, colour-coded system log (logcat)
+
 ⚙️ Settings
 Connection – reconnect on start-up, connection watchdog and how often it checks, default ADB port
 Safety – APK backup before removing, confirm before reboot or shut-down, show the terms notice only once, forget the list of protected apps
