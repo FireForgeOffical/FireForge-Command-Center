@@ -19,7 +19,6 @@ Where FireForge keeps files
 FAQ & troubleshooting
 Building from source
 Disclaimer
-
 Highlights
 
 🧹 Debloat – switch off Amazon services one by one or with one-click presets, from Safe to Extreme, each with a risk rating
@@ -32,7 +31,7 @@ Highlights
 
 🎮 Remote Control – a live view of the TV screen, a full remote, typing from your PC and screenshots; your keyboard becomes the remote
 
-🔁 Automation – apply a setup to several Fire TVs at once, keep each one tidy on a timer, and export a shareable device report
+🔁 Batch & maintenance – apply a setup to several Fire TVs at once, keep each one tidy on a timer, and export a shareable device report
 
 💾 Backup & Restore – snapshots of which apps are off, and APK backups before anything is removed
 
@@ -43,6 +42,7 @@ Highlights
 🖥️ Self-contained – one installer, no .NET or ADB install needed
 
 Download & install
+
 Go to the Releases page.
 Download either:
 FireForge-Setup-x.y.z.exe – installer with Start-menu shortcut and uninstaller, or
@@ -53,6 +53,7 @@ Requirements: Windows 10 or 11 (64-bit), and the PC and Fire TV on the same netw
 FireForge checks GitHub for new versions once a day (you can turn this off in Settings) and offers to download the installer when one is available.
 
 Getting connected
+
 On the Fire TV, open Settings → My Fire TV → About and click your device name 7 times until it says you’re a developer.
 Go back to My Fire TV → Developer Options and switch ADB Debugging on.
 Find the TV’s IP address under Settings → My Fire TV → About → Network (for example 192.168.0.18).
@@ -61,15 +62,17 @@ The first time, the TV asks “Allow USB debugging?” — tick Always allow fro
 FireForge remembers each device you connect to (see Devices ▾ in the top bar), reconnects to the last one on start-up, and reconnects automatically if the connection drops.
 
 Features in detail
+
 The sidebar is split into Menu, Device and Help. Pages that do similar jobs share one sidebar entry with tabs along the top.
 
 📊 Dashboard
+
 Overview tab
 
 Model, Fire OS and Android version, CPU, display, storage, memory, network and uptime
 A screenshot of what’s on the TV right now
 Power controls: reboot, reboot to recovery or bootloader, shut down, force-stop all apps
-Device Report button (see Automation)
+Device Report button (see Extra Tools)
 Health Check tab
 
 A health score with a list of issues and one-click fixes (or Fix All)
@@ -80,7 +83,7 @@ Presets tab
 
 One-click bundles of changes graded Safe, Recommended, Aggressive and Extreme
 Search and filter by severity; restore any preset just as easily
-Apply to Several Devices jumps to Batch Mode on the Automation page
+Apply to Several Devices jumps to Batch Mode on the Extra Tools page
 All Services tab
 
 Every Amazon service FireForge knows about, grouped into categories (telemetry, ads, OTA updates, Alexa, built-in Amazon apps, screensavers, kids’ controls and core OS services), each with a description and risk rating
@@ -135,10 +138,6 @@ A shortcut to the TV’s own privacy settings (usage data and content recognitio
 💾 Backup & Restore
 Snapshots record exactly which apps are disabled or removed; restore one to roll the device back to that state
 APK backups are saved to your PC automatically before any app is removed
-🔁 Automation
-Batch Mode – pick a preset or profile, Balanced Boost and/or the privacy shields, tick your saved Fire TVs, and FireForge applies it to each one in turn, then reconnects to the device you started on
-Scheduled Maintenance – every 1–24 hours while FireForge is open: clears caches, stops background apps, puts shield settings back, and re-disables or re-removes apps that an Amazon update switched back on. It compares against a saved baseline for each device.
-Device Report – a one-page HTML summary of a device (model, Fire OS, storage, memory, every disabled or removed app, and the state of each shield). Print it to PDF from your browser. Serial number, MAC address, IP and Wi-Fi name are left out so it’s safe to share.
 🔓 Root & Recovery
 FireForge never runs exploits, roots or flashes anything automatically — that’s model-specific and doing it blindly can brick a device. Instead it:
 
@@ -149,10 +148,17 @@ Reboots to recovery or the bootloader, and checks fastboot status (when fastboot
 Root Tools (rooted devices only): test root access, and disable apps Fire OS refused to switch off
 Copy Info puts your device details on the clipboard, ready to paste when asking for help
 🧰 Extra Tools
+Apps & display
+
 Launch or force-stop any installed app
 Custom launcher – install a third-party home screen, try to make it the default, or go back to Amazon’s
 TV shortcuts: Fire TV settings, network settings, developer options and restart the home screen
 Interface animation speed, display resolution and screen density (DPI) overrides
+Batch & maintenance
+
+Batch Mode – pick a preset or profile, Balanced Boost and/or the privacy shields, tick your saved Fire TVs, and FireForge applies it to each one in turn, then reconnects to the device you started on
+Scheduled Maintenance – every 1–24 hours while FireForge is open: clears caches, stops background apps, puts shield settings back, and re-disables or re-removes apps that an Amazon update switched back on. It compares against a saved baseline for each device.
+Device Report – a one-page HTML summary of a device (model, Fire OS, storage, memory, every disabled or removed app, and the state of each shield). Print it to PDF from your browser. Serial number, MAC address, IP and Wi-Fi name are left out so it’s safe to share.
 🖥️ Terminal & Logs
 Run your own ADB shell commands
 See everything FireForge does, with timestamps
@@ -193,6 +199,7 @@ Screenshots	Pictures\FireForge\
 All of these can be opened from Settings → Folders.
 
 FAQ & troubleshooting
+
 “Device unauthorized” when connecting
 Look at the TV — it’s asking you to allow debugging. Tick Always allow from this computer and press OK, then connect again.
 
@@ -200,7 +207,7 @@ Can’t connect at all
 Check the IP address, that ADB Debugging is on, and that the PC and TV are on the same network (not a guest network). Restarting the Fire TV usually clears an “offline” state.
 
 An app keeps coming back after an Amazon update
-Turn on the Fire OS Update Shield, and use Scheduled Maintenance on the Automation page — it re-disables anything that comes back.
+Turn on the Fire OS Update Shield, and use Scheduled Maintenance on the Extra Tools page — it re-disables anything that comes back.
 
 Fire OS refused to disable an app
 Newer firmware protects some packages. FireForge offers to remove them for the current user instead (reversible). On a rooted device, Root Tools can disable them.
