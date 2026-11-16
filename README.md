@@ -1,4 +1,5 @@
 FireForge Command Center
+
 A free Windows toolkit to debloat, speed up, protect and control Amazon Fire TV and Fire TV Stick devices — no root needed.
 
 FireForge connects to your Fire TV over your home Wi-Fi using ADB (Android Debug Bridge) and gives you one dark, modern dashboard to switch off Amazon’s bloat and tracking, block forced updates, install apps, control the TV from your PC and keep everything the way you set it up.
@@ -18,17 +19,29 @@ Where FireForge keeps files
 FAQ & troubleshooting
 Building from source
 Disclaimer
+
 Highlights
+
 🧹 Debloat – switch off Amazon services one by one or with one-click presets, from Safe to Extreme, each with a risk rating
+
 ⚡ Optimize – faster menus, background apps stopped, caches cleared and tracking switched off in one click
+
 🛡️ Shields & DNS – block forced Fire OS updates, encrypted ad-blocking DNS, ad-tracking and Wi-Fi-scan controls
+
 📦 App Store – 28 popular TV apps installed straight from their official sources, with update checks, plus drag-and-drop APK sideloading
+
 🎮 Remote Control – a live view of the TV screen, a full remote, typing from your PC and screenshots; your keyboard becomes the remote
+
 🔁 Automation – apply a setup to several Fire TVs at once, keep each one tidy on a timer, and export a shareable device report
+
 💾 Backup & Restore – snapshots of which apps are off, and APK backups before anything is removed
+
 🩺 Health Check – a score with one-click fixes, plus live CPU, memory, storage and temperature
+
 🔓 Root & Recovery – bootloader/root status, a pre-root checklist and the right guide for your exact model
+
 🖥️ Self-contained – one installer, no .NET or ADB install needed
+
 Download & install
 Go to the Releases page.
 Download either:
