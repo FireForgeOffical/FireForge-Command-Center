@@ -12,6 +12,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Contents
 
+- [What's new in 1.0.3](#whats-new-in-103)
 - [Highlights](#highlights)
 - [Download & install](#download--install)
 - [Getting connected](#getting-connected)
@@ -26,6 +27,17 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - [Disclaimer](#disclaimer)
 
 ---
+
+## What's new in 1.0.3
+
+- 🤖 **AI Assistant and Smart Debloat**, free and private on your own PC through Ollama
+- ☢️ **Nuke** – strip the Fire TV back to its core in one go, with a snapshot first and one-click undo
+- 🪐 **Space** and 🖥️ **Motherboard** looks, each with its own layout
+- 🧭 **Wasteland** now has its own layout too: a foldable signpost for navigation and a redesigned connection bar
+- ☣️ **Radiation** fixes: a Geiger-counter health dial, every quick action on the console, and a readable incident log
+- 🧹 **Debloat definitions v3**: 15 more Amazon apps and services, and two risky ones moved out of the Safe and Recommended presets
+- 🔄 **Updates are automatic and required**, checked every time FireForge starts, and no longer blocked by GitHub's hourly limit
+- ✨ Cleaner pages, a "Don't show this again" option on the start-up notice, and lots of fixes to live data
 
 ## Highlights
 
@@ -86,7 +98,7 @@ FireForge remembers each device you connect to (see **Devices ▾** in the top b
 
 ## Features in detail
 
-The sidebar is grouped into **Overview** (Dashboard, Health Check, Benchmark), **Clean Up**, **Apps**, **Device**, **Safety & Undo** and **Advanced**, with **Settings** and **About** pinned at the bottom. Debloat Engine, Backup & Restore and Changes & History have tabs along the top. Press **Ctrl+K** to jump anywhere. When something finishes successfully, a small notification slides in at the bottom-right instead of a box you have to click away; only problems still stop you with a message.
+The sidebar is grouped into **Overview** (Dashboard, Health Check, Benchmark), **Clean Up**, **Apps**, **Device**, **Safety & Undo** and **Advanced**, with **Settings** and **About** pinned at the bottom, plus an **AI** section. (The Wasteland, Radiation, Space and Motherboard looks lay the same sections out their own way.) Debloat Engine, Backup & Restore and Changes & History have tabs along the top. Press **Ctrl+K** to jump anywhere. When something finishes successfully, a small notification slides in at the bottom-right instead of a box you have to click away; only problems still stop you with a message.
 
 Before an option changes something on your Fire TV, FireForge tells you what will happen and how to undo it. When a preset or selection includes a service that's risky to switch off (the home screen, Appstore, WebView, account sign-in, voice), it says what will stop working, with an extra warning on Fire OS versions where it's riskier, such as the 2022 updates that block other launchers from replacing the home screen. Presets and debloats also show how much memory the apps you're switching off are using right now. You can switch these warnings off in **Settings → Safety**; removing apps, presets and other big changes always ask.
 
@@ -121,6 +133,11 @@ Before an option changes something on your Fire TV, FireForge tells you what wil
 - Filter by risk, search by name or package, tick what you want, then **Disable**, **Remove** or **Restore**
 - **Export / Import profiles** (`.fireforge.json`) to reuse your picks on another stick or share them
 - If Fire OS refuses to disable something, FireForge offers to remove it for the current user instead (backing the APK up first), and remembers which packages are protected so you aren't asked again
+
+**☢️ Nuke** (top of the Presets tab)
+- Switches off every Amazon app and service FireForge can, leaving only the core system, the home screen, settings, the remote, keyboard and HDMI inputs, sign-in and your own apps
+- Shows how many will go off and asks you to type **NUKE** to confirm; always takes a snapshot first
+- Nothing is uninstalled. **Undo Nuke** switches back on exactly what the Nuke switched off
 
 ### ⚡ Quick Optimize
 
@@ -235,6 +252,12 @@ Two tabs:
 - **After-Update Check** – compares the TV with everything FireForge changed (and the maintenance baseline) and lists apps that came back and settings that reset, ready to put back in one click. It runs automatically when FireForge sees a new Fire OS version.
 - **ADB-only App Permissions** – pick an installed app (button remappers, mouse cursors, automation tools) and FireForge grants the permissions that normally need a computer, including turning on its accessibility service. **Take Back** removes them
 - **Compare Two Fire TVs** – reads two saved TVs and shows every difference in apps and tweaked settings, then makes one match the other (a snapshot is taken first)
+
+### 🤖 AI Assistant
+
+Runs on your own PC through [Ollama](https://ollama.com) (free) – nothing is sent online. Install Ollama, run `ollama pull llama3.2` once, and the page shows it's ready.
+- **Ask FireForge AI** – questions about your Fire TV, any app or setting, or what to do next. It knows which Fire TV is connected. When it suggests a change (switch an app off or on, restart, open a page), a button appears – nothing happens until you press it and confirm, and it won't switch off core parts the TV needs
+- **Smart Debloat** – describe how you use the TV ("only Netflix and Plex, never Alexa") and get a ticked list of Amazon apps that are safe to switch off for you, each with a reason. **Switch Off Ticked** takes a snapshot first
 
 ### 🔓 Root & Recovery
 
