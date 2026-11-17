@@ -28,17 +28,6 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ---
 
-## What's new in 1.0.3
-
-- 🤖 **AI Assistant and Smart Debloat**, free and private on your own PC through Ollama
-- ☢️ **Nuke** – strip the Fire TV back to its core in one go, with a snapshot first and one-click undo
-- 🪐 **Space** and 🖥️ **Motherboard** looks, each with its own layout
-- 🧭 **Wasteland** now has its own layout too: a foldable signpost for navigation and a redesigned connection bar
-- ☣️ **Radiation** fixes: a Geiger-counter health dial, every quick action on the console, and a readable incident log
-- 🧹 **Debloat definitions v3**: 15 more Amazon apps and services, and two risky ones moved out of the Safe and Recommended presets
-- 🔄 **Updates are automatic and required**, checked every time FireForge starts, and no longer blocked by GitHub's hourly limit
-- ✨ Cleaner pages, a "Don't show this again" option on the start-up notice, and lots of fixes to live data
-
 ## Highlights
 
 - 🖥️ **Five looks, five layouts** – pick one in Settings:
