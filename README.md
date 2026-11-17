@@ -1,6 +1,6 @@
 # FireForge Command Center
 
-**A free Windows toolkit to debloat, speed up, protect and control Amazon Fire TV and Fire TV Stick devices — no root needed.**
+**A free advanced Windows toolkit to debloat, speed up, protect and control Amazon Fire TV and Fire TV Stick devices — no root needed.**
 
 FireForge connects to your Fire TV over your home Wi-Fi using ADB (Android Debug Bridge) and gives you one dark, modern dashboard to switch off Amazon's bloat and tracking, block forced updates, install apps, control the TV from your PC and keep everything the way you set it up.
 
