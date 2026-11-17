@@ -29,10 +29,13 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Highlights
 
-- 🖥️ **Two looks** – **HUD**: holographic cyan on near-black, cut-corner panels with glowing edges, arc gauges and rotating rings around the Health Check score. **Wasteland**: rusted, riveted steel plates, sand and nitro orange, hazard stripes, stencil lettering and needle gauges (engine, pressure, heat, fuel). Pick one in Settings
+- 🖥️ **Three looks, three layouts** – pick one in Settings:
+  - **HUD** – holographic cyan on near-black, a sidebar of cut-corner panels with glowing edges, arc gauges and rotating rings around the Health Check score
+  - **Wasteland** – rusted, riveted steel and nitro orange, with a wooden **signpost** on the right for getting around (fold it down to icons for more room), stencil lettering and needle gauges
+  - **Radiation** – a nuclear bunker console: pages on a green CRT screen, **breaker switches** along the bottom to change section, emergency action switches, a contamination dial and an **incident log** on paper tape
 - 🧹 **Debloat** – switch off Amazon services one by one or with one-click presets, from *Safe* to *Extreme*, each with a risk rating. The package, command and tweak lists **update themselves from GitHub**, so new bloatware is covered without updating the app
 - ⚡ **Quick Optimize** – faster menus, app pre-compiling, deep storage clean, network tune, background limits and memory saver, all reversible
-- 🛡️ **Shields & DNS** – block forced Fire OS updates, encrypted ad-blocking DNS, ad-tracking and Wi-Fi-scan controls
+- 🛡️ **Shields, DNS & VPN** – block forced Fire OS updates, encrypted ad-blocking DNS, ad-tracking and Wi-Fi-scan controls, plus VPN set-up: install WireGuard, send it a config, and switch on always-on VPN with a kill switch
 - 📦 **App Store** – 67 popular TV apps installed straight from their official sources, with update checks, plus drag-and-drop APK sideloading
 - 🎮 **Remote Control** – a live view of the TV screen, a full remote, typing from your PC, screenshots and screen recording; your keyboard becomes the remote
 - 🔁 **Batch & maintenance** – apply a setup to several Fire TVs at once, compare two TVs and copy one's setup to the other, and keep each one tidy on a timer
@@ -41,8 +44,8 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - 🔔 **Runs in the tray** – minimise to the system tray with Windows notifications; scheduled maintenance keeps going
 - 💾 **Backup & Restore** – snapshots of apps and tweaked settings (automatic before big changes), compare, export/import, and APK backups you can reinstall
 - ↩️ **Changes & History** – a live list of everything switched off or tweaked on the TV (with one-click revert), and a timeline of every change FireForge made that you can undo
-- 🧭 **Setup wizard** – first start lets you pick your look (HUD or Wasteland), then walks you through connecting, a health check and a safe debloat
-- 🎨 **Dark or light theme** with six accent colours, and quiet pop-up notifications for results that fade away on their own
+- 🧭 **Setup wizard** – opens straight after installing: pick your look (HUD, Wasteland or Radiation), then it walks you through connecting, a health check and a safe debloat
+- 🔔 **Quiet notifications** – results pop up and fade away on their own instead of dialog boxes
 - 🩺 **Health Check** – a score with one-click fixes, live CPU, memory, storage and temperature, and a shareable device report
 - 🔓 **Root & Recovery** – bootloader/root status, a pre-root checklist and the right guide for your exact model
 - 🖥️ **Self-contained** – one installer, no .NET or ADB install needed
@@ -51,7 +54,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Download & install
 
-1. Go to the **[Releases page](https://github.com/VolvoMan90/FireForge-Command-Center/releases/latest)**.
+1. Go to the **[Releases page](https://github.com/FireForgeOffical/FireForge-Command-Center/releases/latest)**.
 2. Download **`FireForge-Setup-x.y.z.exe`**. It installs FireForge with a Start-menu shortcut and an uninstaller.
 3. Run it. If Windows SmartScreen shows "Windows protected your PC", click **More info → Run anyway**. New apps get this warning until enough people have downloaded them.
 
@@ -61,7 +64,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 download, run `Get-FileHash <file> -Algorithm SHA256` in PowerShell and compare. The **About** page also tells you whether
 your copy is an official release.
 
-FireForge checks GitHub for new versions once a day (you can turn this off in **Settings**) and offers to download the installer when one is available.
+FireForge checks GitHub for a new version every time it starts (you can turn this off in **Settings**) and offers to download the installer when one is available.
 
 ---
 
@@ -133,13 +136,14 @@ One-click tune-ups that work on every model:
 - **TV Control over HDMI (CEC)** – switch it on or off, for when the TV keeps turning itself on
 - A live **Current State** card shows how the device is tuned right now
 
-### 🛡️ Shields & DNS
+### 🛡️ Shields, DNS & VPN
 
 Each card shows the current setting and lets you switch it on or off:
 - **Fire OS Update Shield** – stops Amazon pushing system updates that can undo debloating (and can be restored any time)
 - **Encrypted Private DNS** – AdGuard, Mullvad, Cloudflare, Quad9, Google or your own provider (for example NextDNS)
 - **Interest-based ads**, **connectivity check pings** and **background Wi-Fi scanning**
 - A shortcut to the TV's own privacy settings (usage data and content recognition)
+- **VPN** – shows which VPN apps are installed and whether a VPN tunnel is up. Get a VPN app from the Appstore, install the official **WireGuard** app and send it a config file from your PC, and switch on **Always-on VPN** and the **kill switch** (blocks the internet whenever the VPN drops)
 
 ### 📱 App Manager
 
@@ -251,7 +255,7 @@ FireForge **never** runs exploits, roots or flashes anything automatically — t
 - **Connection** – reconnect on start-up, connection watchdog and how often it checks, default ADB port, run the setup wizard again
 - **Safety** – warnings before options change the TV, change history on/off, APK backup before removing, automatic snapshots before big changes, confirm before reboot or shut-down, show the terms notice only once, forget the list of protected apps
 - **Background & Start-up** – try other saved Fire TVs if the last one doesn't answer, Wake-on-LAN before connecting (Fire TV Cube), minimise to the system tray, Windows notifications, and the after-update check
-- **Interface** – theme (**HUD** or **Wasteland**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
+- **Interface** – theme (**HUD**, **Wasteland** or **Radiation**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
 - **Logging** – timestamps, and saving the log to a file (one per day)
 - **Updates** – check on start-up, check now, un-skip versions, release notes, and **Copy Diagnostics** for bug reports. Also keeps the **debloat definitions** (bloatware, commands, tweaks and presets) up to date automatically from GitHub, with a **Check for New Definitions** button
 - **Folders** – one-click access to every folder FireForge uses
@@ -286,7 +290,7 @@ FireForge is built to stay light:
 
 FireForge works with Fire TV devices running Fire OS 5, 6, 7 or 8 that have **ADB Debugging** in Developer Options, including:
 
-Fire TV Stick (all generations), Fire TV Stick Lite, Fire TV Stick 4K, Fire TV Stick 4K Max, Fire TV Cube, Fire TV boxes and Fire TV Edition smart TVs.
+Fire TV Stick (all generations), Fire TV Stick Lite, Fire TV Stick 4K, Fire TV Stick 4K Max (including the 2023 model, "Karat"), Fire TV Cube, Fire TV boxes and Fire TV Edition smart TVs.
 
 Newer Fire TV devices running **Vega OS** (not Android-based) are not supported. Some packages are protected by Fire OS on newer firmware and can't be disabled without root — FireForge tells you when that happens.
 
@@ -327,7 +331,7 @@ Newer firmware protects some packages. FireForge offers to remove them for the c
 They need HDMI-CEC switched on in your TV's settings.
 
 **FireForge showed "Something went wrong"**
-Press **Copy Error Details** in that window and paste it into a [new issue](https://github.com/VolvoMan90/FireForge-Command-Center/issues/new). You can also copy diagnostics any time from **Settings → Updates**.
+Press **Copy Error Details** in that window and paste it into a [new issue](https://github.com/FireForgeOffical/FireForge-Command-Center/issues/new). You can also copy diagnostics any time from **Settings → Updates**.
 
 **I want to undo something FireForge did**
 Open **Changes & History → History**, select the change (or any change from the same preset) and press **Undo Selected** or **Undo Whole Operation**.
@@ -352,7 +356,7 @@ Your settings, snapshots, backups and logs stay on your PC.
 
 ## Licence
 
-FireForge Command Center is free to download and use. Copyright © 2026 VolvoMan90, all rights reserved. Please share a link to this page rather than re-uploading FireForge elsewhere, so everyone gets the genuine, up-to-date version.
+FireForge Command Center is free to download and use. Copyright © 2026 FireForge, all rights reserved. Please share a link to this page rather than re-uploading FireForge elsewhere, so everyone gets the genuine, up-to-date version.
 
 FireForge includes Google's ADB Platform Tools, which are licensed separately by Google.
 
