@@ -1,15 +1,44 @@
 {
-  "version": 1,
+  "version": 2,
   "updated": "2026-11-17",
   "categories": [
     {
       "category": "Telemetry & Metrics",
       "items": [
-        { "name": "Kinesis Data Streamer", "package": "com.amazon.kindle.kso.metrics", "description": "Streams usage events to Amazon's analytics pipeline.", "level": "Safe" }
+        { "name": "Performance Collection", "package": "com.amazon.perfcollection", "description": "Collects performance data and sends it to Amazon.", "level": "Safe" },
+        { "name": "Performance Counters", "package": "com.amazon.perfc", "description": "Background performance logging on Fire OS 8 devices.", "level": "Recommended" },
+        { "name": "Telemetry Emitter", "package": "com.amazon.device.telemetry.emitter", "description": "Sends device telemetry to Amazon (Fire OS 8).", "level": "Safe" }
+      ]
+    },
+    {
+      "category": "Ads & Retail Promotions",
+      "items": [
+        { "name": "Content Recognition (ACR)", "package": "com.amazon.tv.acr", "description": "Automatic content recognition: identifies what's playing on screen for Amazon's ad and recommendation data.", "level": "Recommended" },
+        { "name": "Hybrid Advertising ID", "package": "com.amazon.hybridadidservice", "description": "Advertising ID service used for targeted ads.", "level": "Recommended" },
+        { "name": "Special Offers Background Service", "package": "com.amazon.kso.blackbird", "description": "Background ad service behind Special Offers on Fire OS 8. Saves memory and CPU when off.", "level": "Recommended" },
+        { "name": "Sneak Peek Previews", "package": "com.amazon.sneakpeek", "description": "Auto-playing promotional previews on the Home screen.", "level": "Recommended" }
+      ]
+    },
+    {
+      "category": "Screensavers & UI Guides",
+      "items": [
+        { "name": "Release Notes", "package": "com.amazon.tv.releasenotes", "description": "Shows \"what's new\" pop-ups after Fire OS updates.", "level": "Safe" },
+        { "name": "Notification Center", "package": "com.amazon.tv.notificationcenter", "description": "Amazon's notification panel and promotional notifications. You won't see system notifications while it's off.", "level": "Aggressive" }
+      ]
+    },
+    {
+      "category": "Voice & Alexa Assistant",
+      "items": [
+        { "name": "Smart Home Map", "package": "com.amazon.smarthomemapviewapp", "description": "Alexa smart home map view.", "level": "Safe" },
+        { "name": "Matter Smart Home", "package": "com.amazon.tv.matter", "description": "Matter smart home support. Switch off only if you don't control smart home devices from the TV.", "level": "Aggressive" },
+        { "name": "Matter Co-host", "package": "com.amazon.tv.mattercohost", "description": "Lets the Fire TV act as a Matter hub for other devices.", "level": "Aggressive" }
       ]
     }
   ],
-  "overrides": [],
+  "overrides": [
+    { "package": "com.amazon.aria", "description": "Voice settings menu and input manager. On Fire OS 8 (e.g. Fire TV Stick 4K Max 2nd Gen) some users report a stuck boot logo after disabling it together with other core services - take a snapshot first." },
+    { "package": "com.amazon.tcomm", "description": "Persistent link to Amazon's servers (sign-in, sync). On Fire OS 8 some users report a stuck boot logo after disabling it - not recommended." }
+  ],
   "remove": [],
   "presets": []
 }
