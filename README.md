@@ -29,12 +29,14 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Highlights
 
-- 🖥️ **Four looks, four layouts** – pick one in Settings:
+- 🖥️ **Five looks, five layouts** – pick one in Settings:
   - **HUD** – holographic cyan on near-black, a sidebar of cut-corner panels with glowing edges, arc gauges and rotating rings around the Health Check score
   - **Wasteland** – rusted, riveted steel and nitro orange, with a wooden **signpost** on the right for getting around (fold it down to icons for more room), stencil lettering and needle gauges
   - **Radiation** – a nuclear bunker console: pages on a green CRT screen, **breaker switches** along the bottom to change section, emergency action switches, a contamination dial and an **incident log** on paper tape
   - **Space** – deep space and nebula violet: sections are **planets on an orbit** across the top, their pages are moons, and everything shows through a starship viewport with a mission log underneath
+  - **Motherboard** – the inside of a PC: sections are chips on a green circuit board with copper traces, **RAM slots** across the top change section, pages are jumper headers, and a **POST code display** and LEDs show what's happening
 - 🧹 **Debloat** – switch off Amazon services one by one or with one-click presets, from *Safe* to *Extreme*, each with a risk rating. The package, command and tweak lists **update themselves from GitHub**, so new bloatware is covered without updating the app
+- 🤖 **AI Assistant** – ask anything about your Fire TV, any app or setting, and get one-click suggestions you confirm. **Smart Debloat** reads what's on your TV and suggests what to switch off for how you use it. Runs free and privately on your own PC through [Ollama](https://ollama.com) – nothing is sent online
 - ☢️ **Nuke** – the most extreme option: switches off every Amazon app and service FireForge can, leaving only the core system, the home screen, the remote and keyboard. Snapshot first, type NUKE to confirm, and **Undo Nuke** switches it all back on
 - ⚡ **Quick Optimize** – faster menus, app pre-compiling, deep storage clean, network tune, background limits and memory saver, all reversible
 - 🛡️ **Shields, DNS & VPN** – block forced Fire OS updates, encrypted ad-blocking DNS, ad-tracking and Wi-Fi-scan controls, plus VPN set-up: install WireGuard, send it a config, and switch on always-on VPN with a kill switch
@@ -46,7 +48,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - 🔔 **Runs in the tray** – minimise to the system tray with Windows notifications; scheduled maintenance keeps going
 - 💾 **Backup & Restore** – snapshots of apps and tweaked settings (automatic before big changes), compare, export/import, and APK backups you can reinstall
 - ↩️ **Changes & History** – a live list of everything switched off or tweaked on the TV (with one-click revert), and a timeline of every change FireForge made that you can undo
-- 🧭 **Setup wizard** – opens straight after installing: pick your look (HUD, Wasteland, Radiation or Space), then it walks you through connecting, a health check and a safe debloat
+- 🧭 **Setup wizard** – opens straight after installing: pick your look (HUD, Wasteland, Radiation, Space or Motherboard), then it walks you through connecting, a health check and a safe debloat
 - 🔔 **Quiet notifications** – results pop up and fade away on their own instead of dialog boxes
 - 🩺 **Health Check** – a score with one-click fixes, live CPU, memory, storage and temperature, and a shareable device report
 - 🔓 **Root & Recovery** – bootloader/root status, a pre-root checklist and the right guide for your exact model
@@ -255,9 +257,10 @@ FireForge **never** runs exploits, roots or flashes anything automatically — t
 - **Connection** – reconnect on start-up, connection watchdog and how often it checks, default ADB port, run the setup wizard again
 - **Safety** – warnings before options change the TV, change history on/off, APK backup before removing, automatic snapshots before big changes, confirm before reboot or shut-down, show the terms notice only once, forget the list of protected apps
 - **Background & Start-up** – try other saved Fire TVs if the last one doesn't answer, Wake-on-LAN before connecting (Fire TV Cube), minimise to the system tray, Windows notifications, and the after-update check
-- **Interface** – theme (**HUD**, **Wasteland**, **Radiation** or **Space**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
+- **Interface** – theme (**HUD**, **Wasteland**, **Radiation**, **Space** or **Motherboard**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
 - **Logging** – timestamps, and saving the log to a file (one per day)
 - **Updates** – check now, release notes, and **Copy Diagnostics** for bug reports. FireForge and its **debloat definitions** (bloatware, commands, tweaks and presets) update automatically from GitHub every time it starts, with a **Check for New Definitions** button
+- **AI (Ollama)** – the Ollama address, a connection test and a link to download Ollama (free)
 - **Folders** – one-click access to every folder FireForge uses
 - **Reset** – forget saved devices, or reset all settings (devices, snapshots, profiles and backups are kept)
 
