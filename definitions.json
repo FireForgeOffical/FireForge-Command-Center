@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "updated": "2026-11-17",
+  "categories": [
+    {
+      "category": "Telemetry & Metrics",
+      "items": [
+        { "name": "Kinesis Data Streamer", "package": "com.amazon.kindle.kso.metrics", "description": "Streams usage events to Amazon's analytics pipeline.", "level": "Safe" }
+      ]
+    }
+  ],
+  "overrides": [],
+  "remove": [],
+  "presets": []
+}
