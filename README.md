@@ -62,7 +62,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 **Only download FireForge from this GitHub page – it's always free.**
 
-FireForge checks GitHub for a new version every time it starts (you can turn this off in **Settings**) and offers to download the installer when one is available.
+FireForge checks GitHub for a new version every time it starts. Updates are required: when one is available, FireForge downloads and runs the new installer for you.
 
 ---
 
@@ -255,7 +255,7 @@ FireForge **never** runs exploits, roots or flashes anything automatically — t
 - **Background & Start-up** – try other saved Fire TVs if the last one doesn't answer, Wake-on-LAN before connecting (Fire TV Cube), minimise to the system tray, Windows notifications, and the after-update check
 - **Interface** – theme (**HUD**, **Wasteland** or **Radiation**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
 - **Logging** – timestamps, and saving the log to a file (one per day)
-- **Updates** – check on start-up, check now, un-skip versions, release notes, and **Copy Diagnostics** for bug reports. Also keeps the **debloat definitions** (bloatware, commands, tweaks and presets) up to date automatically from GitHub, with a **Check for New Definitions** button
+- **Updates** – check now, release notes, and **Copy Diagnostics** for bug reports. FireForge and its **debloat definitions** (bloatware, commands, tweaks and presets) update automatically from GitHub every time it starts, with a **Check for New Definitions** button
 - **Folders** – one-click access to every folder FireForge uses
 - **Reset** – forget saved devices, or reset all settings (devices, snapshots, profiles and backups are kept)
 
@@ -344,7 +344,7 @@ New apps show this until they've built up a download history. Click **More info 
 FireForge has no accounts, telemetry, analytics or advertising. It only connects to:
 
 - **your Fire TV**, over ADB on your local network or USB
-- **GitHub**, to check for new FireForge versions and updated debloat definitions (both can be turned off in **Settings → Updates**)
+- **GitHub**, to check for new FireForge versions and updated debloat definitions (required, every time FireForge starts)
 - **an app's official website or GitHub page**, when you choose to install that app from the App Store
 - **Google's public favicon service**, to fetch App Store icons, which are then kept on your PC
 
