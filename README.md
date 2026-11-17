@@ -86,7 +86,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Download & install
 
-1. Go to the **[Releases page](https://github.com/FireForgeOffical/FireForge-Command-Center/releases/latest)**.
+1. Go to the **[Releases page](https://github.com/FireForgeOfficial/FireForge-Command-Center/releases/latest)**.
 2. Download **`FireForge-Setup-1.x.x or Portable version`**. It installs FireForge with a Start-menu shortcut and an uninstaller.
 3. Run it. If Windows SmartScreen shows "Windows protected your PC", click **More info → Run anyway**. New apps get this warning until enough people have downloaded them.
 
@@ -373,7 +373,7 @@ Newer firmware protects some packages. FireForge offers to remove them for the c
 They need HDMI-CEC switched on in your TV's settings.
 
 **FireForge showed "Something went wrong"**
-Press **Copy Error Details** in that window and paste it into a [new issue](https://github.com/FireForgeOffical/FireForge-Command-Center/issues/new). You can also copy diagnostics any time from **Settings → Updates**.
+Press **Copy Error Details** in that window and paste it into a [new issue](https://github.com/FireForgeOfficial/FireForge-Command-Center/issues/new). You can also copy diagnostics any time from **Settings → Updates**.
 
 **I want to undo something FireForge did**
 Open **Changes & History → History**, select the change (or any change from the same preset) and press **Undo Selected** or **Undo Whole Operation**.
