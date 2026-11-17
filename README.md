@@ -55,14 +55,12 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 ## Download & install
 
 1. Go to the **[Releases page](https://github.com/FireForgeOffical/FireForge-Command-Center/releases/latest)**.
-2. Download **`FireForge-Setup-x.y.z.exe`**. It installs FireForge with a Start-menu shortcut and an uninstaller.
+2. Download **`FireForge-Setup-1.x.x or Portable version`**. It installs FireForge with a Start-menu shortcut and an uninstaller.
 3. Run it. If Windows SmartScreen shows "Windows protected your PC", click **More info → Run anyway**. New apps get this warning until enough people have downloaded them.
 
 **Requirements:** Windows 10 or 11 (64-bit), and the PC and Fire TV on the same network. Everything else, including ADB, is built in.
 
-**Only download FireForge from this GitHub page – it's always free.** Each release lists SHA-256 checksums; to check your
-download, run `Get-FileHash <file> -Algorithm SHA256` in PowerShell and compare. The **About** page also tells you whether
-your copy is an official release.
+**Only download FireForge from this GitHub page – it's always free.**
 
 FireForge checks GitHub for a new version every time it starts (you can turn this off in **Settings**) and offers to download the installer when one is available.
 
