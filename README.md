@@ -12,6 +12,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Contents
 
+- [What's new in 1.0.4](#whats-new-in-104)
 - [Highlights](#highlights)
 - [Download & install](#download--install)
 - [Getting connected](#getting-connected)
@@ -26,6 +27,33 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - [Disclaimer](#disclaimer)
 
 ---
+
+## What's new in 1.0.4
+
+- 🧭 **New Debloat Engine layout** in every look: Presets and All Services list their groups down the left, with the chosen one in full on the right
+- 🎯 **Presets** show exactly what each one changes: a table of every service with its live state on your TV, counts of what's already off, still running or not on your model, an **ON** badge when a preset is fully applied, and **Pick Services Myself** to fine-tune a preset before applying it
+- 🏷️ **All Services** tags every row live: *Off on TV*, *Removed*, *Running* or *Not on this model*
+- 🛍️ **App Store** uses the full width: search plus **All apps / Installed / Updates** switches on top, with update counts, and categories that open and close like menus
+- 📊 **Quick Optimize → Current State** shows 9 live readings with status lights and a tuning score: animations, ad tracking, tracking services, update shield, Memory Saver, network, Wi-Fi scanning, Private DNS and apps
+- 🔤 **Cleaner text in every look**: one matching set of text sizes, and labels, buttons, tabs and menus that always fit their boxes. Wasteland drops the typewriter font for its normal one, and the Motherboard tick boxes now clearly show ticked and unticked
+- 🧽 **No more duplicate buttons**: Recovery and Bootloader live on Root & Recovery, one **Restore ALL Defaults** covers every service and preset, and repeated shortcuts are gone
+- 🔄 **Safer, sturdier updates**: retries and a fallback when GitHub is busy, a progress readout while downloading, and the installer is checked (size, file type and SHA-256 checksum) before it runs
+- 🧹 **Definitions** download from the GitHub API first so you always get the newest list, are checked before use, and are **applied straight away** with no restart
+
+<details>
+<summary>What was new in 1.0.3</summary>
+
+
+- 🤖 **AI Assistant and Smart Debloat**, free and private on your own PC through Ollama
+- ☢️ **Nuke** – strip the Fire TV back to its core in one go, with a snapshot first and one-click undo
+- 🪐 **Space** and 🖥️ **Motherboard** looks, each with its own layout
+- 🧭 **Wasteland** now has its own layout too: a foldable signpost for navigation and a redesigned connection bar
+- ☣️ **Radiation** fixes: a Geiger-counter health dial, every quick action on the console, and a readable incident log
+- 🧹 **Debloat definitions v3**: 15 more Amazon apps and services, and two risky ones moved out of the Safe and Recommended presets
+- 🔄 **Updates are automatic and required**, checked every time FireForge starts, and no longer blocked by GitHub's hourly limit
+- ✨ Cleaner pages, a "Don't show this again" option on the start-up notice, and lots of fixes to live data
+
+</details>
 
 ## Highlights
 
@@ -94,7 +122,7 @@ Before an option changes something on your Fire TV, FireForge tells you what wil
 
 - **Live** tiles with mini graphs, updated every few seconds while the page is open: CPU load, memory, temperature, network download/upload speed, Wi-Fi signal strength, the app on screen right now, free storage and uptime
 - **Device details** in four tidy cards – Device, Status, Storage & Memory, and Display & Network – with each value on its own row (hover to see anything cut off)
-- **Quick Actions** across the top: refresh, reboot, recovery, bootloader, shut down, sleep, restart the home screen, stop background apps, clear caches and a shortcut to Remote Control (each asks first, and hovering explains what it does)
+- **Quick Actions** across the top: refresh, reboot, shut down, sleep, restart the home screen, stop background apps, clear caches and a shortcut to Remote Control (each asks first, and hovering explains what it does). Recovery and bootloader restarts are on **Root & Recovery**
 
 ### 🩺 Health Check
 
@@ -141,7 +169,7 @@ One-click tune-ups that work on every model:
 - **What's Using Memory & Storage** – every app's memory use right now (stop or switch off any of them) and its app, data and cache size
 - **Sleep & Screensaver Timers** – any screensaver start time from 1 minute to never, and a sleep timer from 5 minutes to never (Fire OS has no sleep setting of its own). A few newer models ignore custom timers
 - **TV Control over HDMI (CEC)** – switch it on or off, for when the TV keeps turning itself on
-- A live **Current State** card shows how the device is tuned right now
+- A live **Current State** card shows how the device is tuned right now: nine readings with green/amber lights and an overall tuning score
 
 ### 🛡️ Shields, DNS & VPN
 
