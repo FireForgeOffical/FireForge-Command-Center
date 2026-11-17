@@ -12,7 +12,6 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Contents
 
-- [What's new in 1.0.3](#whats-new-in-103)
 - [Highlights](#highlights)
 - [Download & install](#download--install)
 - [Getting connected](#getting-connected)
