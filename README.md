@@ -12,7 +12,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Contents
 
-- [What's new in 1.1.0](#whats-new-in-110)
+- [What's new in 1.3.0](#whats-new-in-130)
 - [Highlights](#highlights)
 - [Download & install](#download--install)
 - [Getting connected](#getting-connected)
@@ -28,7 +28,39 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ---
 
-## What's new in 1.1.0
+## What's new in 1.3.0
+
+- 🎨 **A look for every device**: five new looks, each styled after its TV's own menus (no logos or brand fonts) – **Ember** for Fire TV, **Chroma** for Google TV, **Leanback** for Android TV, **Viper** for NVIDIA Shield and **Graphite** for other Android devices
+- 🪄 **Match my device** is the new default look: FireForge picks the look for the device type you chose, and changes with it. HUD and Wasteland are still there in **Settings → Interface → Theme**
+- 🧭 **Each look has its own layout**:
+  - **Ember, Chroma and Viper** swap the sidebar for menu tabs across the top, with the open section's pages in a row underneath – an orange focus ring (Ember), pastel pills (Chroma) or angular lime plates (Viper)
+  - **Leanback** has a slim rail of round section icons down the left and a row heading with the section's pages above each page
+  - **Graphite** keeps a clean sidebar
+- 🖼️ **Featured banners** in the new looks: the Dashboard shows your TV, its health score and the next thing to do; the Presets page puts the recommended preset for your device one click from a preview
+- 🎚️ **Beginner / Advanced / Expert** switch in every look – in the top bar in HUD and Wasteland, in the menu in the new looks
+- 🧪 More automated checks: every look is tested for readable text and clear buttons before each release
+
+<details>
+<summary>What was new in 1.2.0</summary>
+
+- ⚡ **Much faster clean-ups**: presets, services, Restore All, the Nuke, batch mode and Health Check fixes now switch apps off in groups instead of one at a time, and skip anything that's already off or not on your TV
+- ✅ **Every change is checked on the TV**: FireForge reads the TV back after each group, gives anything that didn't change the full treatment (root, suspend, removal), and checks again a few seconds later for apps the system quietly switched back on
+- 🔌 **Carries on after a dropped connection**: if the TV falls off Wi-Fi mid-job, FireForge waits up to a minute for it and continues where it stopped
+- 👀 **Preview before you apply**: a dry run shows exactly what will switch off, what's already off, what isn't on this TV and what stays on to protect it – with the risky ones first and what stops working
+- 📸 **Always a snapshot before risky changes**: Aggressive and Extreme presets and services take a restore point even if automatic snapshots are off
+- 📉 **Before and after**: results show free memory before and after the clean-up
+- 🤝 **Share how it went (optional)**: after a clean-up on Google TV, Android TV, Shield or other devices – or whenever something didn't work – FireForge can open a pre-filled, anonymous GitHub report for your model, so the lists get better for everyone
+- 🔗 **Share codes**: Export Profile → Copy a share code turns your setup into one line of text; Import Profile → Paste a share code loads someone else's
+- 💤 **Unused apps**: Bloat Finder now works on every TV, shows when you last opened each app, and **Pick Unused** selects the ones you haven't opened in a month
+- 📡 **Easier first connection**: Scan Network also finds Google TV and Android TV with wireless debugging on, and offers pairing with a code when nothing answers
+- ⌨️ **Command-line mode**: `FireForge.exe --list-presets` shows the presets, then `FireForge.exe --preset "<name>" --ip 192.168.1.20 --yes` applies one; `--restore-preset` and `--restore-all` undo – the same checked engine, no window
+- 🧪 **Automated checks**: every release build first checks the lists, presets, safety rules, share codes and the definitions file, and builds nothing if one fails
+- 🗣️ Messages read right on every device ("an Android TV", not "a Android TV")
+
+</details>
+
+<details>
+<summary>What was new in 1.1.0</summary>
 
 - 📺 **Every TV, not just Fire TV**: when FireForge starts it asks which device you're using – **Fire TV**, **Google TV**, **Android TV**, **NVIDIA Shield** or **another Android device** – and loads that device's debloat lists, presets and tools. When you connect, it checks what the TV really is and offers to switch if it's something else (change it any time in **Settings → Device Type**)
 - 🌈 **Google TV and Android TV lists**: Android's ad services and ad personalisation, the recommendation and sponsored rows, Google telemetry and feedback, unused Google apps, Ambient mode, Assistant and voice, and the phone leftovers that do nothing on a TV (printing, SIM, call and sample apps) – each with a risk rating and ready-made Safe, Recommended and Aggressive presets
@@ -42,11 +74,18 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - 🔄 **Debloat definitions update every day**: as well as at start-up, FireForge checks GitHub for new lists once a day while it's open (even in the tray), and switches to a new list as soon as nothing is ticked and no job is running – no restart needed. Switch it off with **Check every day** in **Settings → Updates**
 - 🎨 **Two looks**: HUD and Wasteland. The Radiation, Space and Motherboard looks have been retired
 
+</details>
+
 ## Highlights
 
 - 📺 **Fire TV, Google TV, Android TV, NVIDIA Shield and other Android devices** – pick yours when FireForge starts; each gets its own lists, presets and tools
-- 🎚️ **Beginner / Advanced / Expert** – a switch in the top bar decides how much FireForge shows
-- 🖥️ **Two looks, two layouts** – pick one in Settings:
+- 🎚️ **Beginner / Advanced / Expert** – a switch in every look decides how much FireForge shows
+- 🖥️ **Seven looks, each with its own layout** – pick one in Settings, or let **Match my device** choose:
+  - **Ember** (Fire TV) – deep navy and ember orange, menu tabs across the top with a focus ring on the open page
+  - **Chroma** (Google TV) – near-black and soft pastel blue, rounded cards and pill-shaped tabs
+  - **Leanback** (Android TV) – slate and teal, a slim rail of round section icons and flat cards
+  - **Viper** (NVIDIA Shield) – black and lime, angular cut corners and capital-letter tabs
+  - **Graphite** (other Android) – neutral graphite and violet with a clean sidebar
   - **HUD** – holographic cyan on near-black, a sidebar of cut-corner panels with glowing edges, arc gauges and rotating rings around the Health Check score
   - **Wasteland** – rusted, riveted steel and nitro orange, with a wooden **signpost** on the right for getting around (fold it down to icons for more room), stencil lettering and needle gauges
 - 🧹 **Debloat** – switch off Amazon services one by one or with one-click presets, from *Safe* to *Extreme*, each with a risk rating. The package, command and tweak lists **update themselves from GitHub** at start-up and every day, so new bloatware is covered without updating the app
@@ -62,7 +101,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - 🔔 **Runs in the tray** – minimise to the system tray with Windows notifications; scheduled maintenance keeps going
 - 💾 **Backup & Restore** – snapshots of apps and tweaked settings (automatic before big changes), compare, export/import, and APK backups you can reinstall
 - ↩️ **Changes & History** – a live list of everything switched off or tweaked on the TV (with one-click revert), and a timeline of every change FireForge made that you can undo
-- 🧭 **Setup wizard** – opens straight after installing: pick your look (HUD or Wasteland), then it walks you through connecting, a health check and a safe debloat
+- 🧭 **Setup wizard** – opens straight after installing: pick your look (Match my device, HUD or Wasteland), then it walks you through connecting, a health check and a safe debloat
 - 🔔 **Quiet notifications** – results pop up and fade away on their own instead of dialog boxes
 - 🩺 **Health Check** – a score with one-click fixes, live CPU, memory, storage and temperature, and a shareable device report
 - 🔓 **Root & Recovery** – bootloader/root status, a pre-root checklist and the right guide for your exact model
@@ -102,7 +141,7 @@ FireForge remembers each device you connect to (see **Devices ▾** in the top b
 
 ## Features in detail
 
-The sidebar is grouped into **Overview** (Dashboard, Health Check, Benchmark), **Clean Up**, **Apps**, **Device**, **Safety & Undo** and **Advanced**, with **Settings** and **About** pinned at the bottom, plus an **AI** section. (The Wasteland look lays the same sections out on its signpost.) Debloat Engine, Backup & Restore and Changes & History have tabs along the top. Press **Ctrl+K** to jump anywhere. When something finishes successfully, a small notification slides in at the bottom-right instead of a box you have to click away; only problems still stop you with a message.
+The sidebar is grouped into **Overview** (Dashboard, Health Check, Benchmark), **Clean Up**, **Apps**, **Device**, **Safety & Undo** and **Advanced**, with **Settings** and **About** pinned at the bottom, plus an **AI** section. (The Wasteland look lays the same sections out on its signpost; Ember, Chroma and Viper show them as tabs across the top, and Leanback as a rail of icons.) Debloat Engine, Backup & Restore and Changes & History have tabs along the top. Press **Ctrl+K** to jump anywhere. When something finishes successfully, a small notification slides in at the bottom-right instead of a box you have to click away; only problems still stop you with a message.
 
 Before an option changes something on your Fire TV, FireForge tells you what will happen and how to undo it. When a preset or selection includes a service that's risky to switch off (the home screen, Appstore, WebView, account sign-in, voice), it says what will stop working, with an extra warning on Fire OS versions where it's riskier, such as the 2022 updates that block other launchers from replacing the home screen. Presets and debloats also show how much memory the apps you're switching off are using right now. You can switch these warnings off in **Settings → Safety**; removing apps, presets and other big changes always ask.
 
@@ -285,7 +324,7 @@ FireForge **never** runs exploits, roots or flashes anything automatically — t
 - **Safety** – warnings before options change the TV, change history on/off, APK backup before removing, automatic snapshots before big changes, confirm before reboot or shut-down, show the terms notice only once, forget the list of protected apps
 - **Background & Start-up** – try other saved Fire TVs if the last one doesn't answer, Wake-on-LAN before connecting (Fire TV Cube), minimise to the system tray, Windows notifications, and the after-update check
 - **Device Type** – which kind of TV FireForge is set up for, whether to ask every time it starts, and a check of the connected device
-- **Interface** – theme (**HUD** or **Wasteland**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
+- **Interface** – theme (**Match my device**, **HUD**, **Wasteland**, **Ember**, **Chroma**, **Leanback**, **Viper** or **Graphite**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
 - **Logging** – timestamps, and saving the log to a file (one per day)
 - **Updates** – check now, release notes, and **Copy Diagnostics** for bug reports. FireForge and its **debloat definitions** (bloatware, commands, tweaks and presets) update automatically from GitHub every time it starts, with a **Check for New Definitions** button
 - **AI (Ollama)** – the Ollama address, a connection test and a link to download Ollama (free)
