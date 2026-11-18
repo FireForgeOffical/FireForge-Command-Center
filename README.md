@@ -1,18 +1,18 @@
 # FireForge Command Center
 
-**A free advanced Windows toolkit to debloat, speed up, protect and control Amazon Fire TV and Fire TV Stick devices — no root needed.**
+**A free advanced Windows toolkit to debloat, speed up, protect and control Fire TV, Google TV, Android TV and NVIDIA Shield devices — no root needed.**
 
-FireForge connects to your Fire TV over your home Wi-Fi using ADB (Android Debug Bridge) and gives you one dark, modern dashboard to switch off Amazon's bloat and tracking, block forced updates, install apps, control the TV from your PC and keep everything the way you set it up.
+FireForge connects to your TV over your home Wi-Fi using ADB (Android Debug Bridge) and gives you one dark, modern dashboard to switch off Amazon's bloat and tracking, block forced updates, install apps, control the TV from your PC and keep everything the way you set it up.
 
 Every change is reversible. FireForge never deletes Amazon's system files.
 
-> FireForge is free software and is **not affiliated with, endorsed by or sponsored by Amazon**. "Amazon", "Fire TV" and "Fire TV Stick" are trademarks of Amazon.com, Inc. or its affiliates.
+> FireForge is free software and is **not affiliated with, endorsed by or sponsored by Amazon, Google or NVIDIA**. "Amazon", "Fire TV" and "Fire TV Stick" are trademarks of Amazon.com, Inc. or its affiliates. "Google TV" and "Android TV" are trademarks of Google LLC. "NVIDIA" and "SHIELD" are trademarks of NVIDIA Corporation.
 
 ---
 
 ## Contents
 
-- [What's new in 1.0.4](#whats-new-in-104)
+- [What's new in 1.1.0](#whats-new-in-110)
 - [Highlights](#highlights)
 - [Download & install](#download--install)
 - [Getting connected](#getting-connected)
@@ -28,7 +28,22 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ---
 
-## What's new in 1.0.4
+## What's new in 1.1.0
+
+- 📺 **Every TV, not just Fire TV**: when FireForge starts it asks which device you're using – **Fire TV**, **Google TV**, **Android TV**, **NVIDIA Shield** or **another Android device** – and loads that device's debloat lists, presets and tools. When you connect, it checks what the TV really is and offers to switch if it's something else (change it any time in **Settings → Device Type**)
+- 🌈 **Google TV and Android TV lists**: Android's ad services and ad personalisation, the recommendation and sponsored rows, Google telemetry and feedback, unused Google apps, Ambient mode, Assistant and voice, and the phone leftovers that do nothing on a TV (printing, SIM, call and sample apps) – each with a risk rating and ready-made Safe, Recommended and Aggressive presets
+- 🎮 **NVIDIA Shield**: its own list and a **Shield Gaming Mode** preset that fixes controller buttons in Xbox Cloud Gaming and frees memory, while GeForce NOW and controllers keep working
+- 🏭 **TV makers**: Xiaomi PatchWall extras load automatically on Xiaomi TVs and boxes, and the TCL, Sony, Xiaomi and Shield services that inputs, remotes and updates need are **always kept on**
+- 📦 **Other Android devices** get a full general list (ads, telemetry, Google extras and phone leftovers) that works on any box, projector or tablet
+- 🛡️ **Never-touch protection**: on every non-Fire device FireForge refuses to switch off the things that would leave it unusable – Play Services, the Play Store, keyboards, inputs, the remote service and the location service
+- 🔑 **Pair with code** (Devices ▾) for Google TV and Android TV on Android 11 and newer, and FireForge finds the new wireless debugging port by itself after the TV restarts
+- 🏠 **Launcher swap**: set another home screen, and on Google TV / Android TV **switch the stock home (and its ads) off** – only once the new one answers the Home button, so you can't be left with a black screen
+- 🎚️ **Beginner / Advanced / Expert switch** in the top bar: Beginner shows only safe and recommended presets and the everyday pages; Advanced adds aggressive options, the extra tools and the Terminal; Expert shows everything, including Extreme options and Root & Recovery
+- 🔄 **Debloat definitions update every day**: as well as at start-up, FireForge checks GitHub for new lists once a day while it's open (even in the tray), and switches to a new list as soon as nothing is ticked and no job is running – no restart needed. Switch it off with **Check every day** in **Settings → Updates**
+- 🎨 **Two looks**: HUD and Wasteland. The Radiation, Space and Motherboard looks have been retired
+
+<details>
+<summary>What was new in 1.0.4</summary>
 
 - 🧭 **New Debloat Engine layout** in every look: Presets and All Services list their groups down the left, with the chosen one in full on the right
 - 🎯 **Presets** show exactly what each one changes: a table of every service with its live state on your TV, counts of what's already off, still running or not on your model, an **ON** badge when a preset is fully applied, and **Pick Services Myself** to fine-tune a preset before applying it
@@ -37,8 +52,17 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - 📊 **Quick Optimize → Current State** shows 9 live readings with status lights and a tuning score: animations, ad tracking, tracking services, update shield, Memory Saver, network, Wi-Fi scanning, Private DNS and apps
 - 🔤 **Cleaner text in every look**: one matching set of text sizes, and labels, buttons, tabs and menus that always fit their boxes. Wasteland drops the typewriter font for its normal one, and the Motherboard tick boxes now clearly show ticked and unticked
 - 🧽 **No more duplicate buttons**: Recovery and Bootloader live on Root & Recovery, one **Restore ALL Defaults** covers every service and preset, and repeated shortcuts are gone
+- 🛡️ **FireForge Agent** runs on the TV itself and keeps everything you switched off, removed or set in place – even with FireForge closed
+- 🔁 **Removal Guard** switches off again anything Amazon brings back, and tells you what put it back
+- 🔒 **Privacy Lockdown** takes microphone, camera, location and contacts access away from Amazon's apps without switching anything off
+- 🔬 **Service Surgery** switches off single tracking and ad services inside Amazon apps while the app keeps working
+- 📈 **Bloat Finder** ranks Amazon apps by real cost so you know exactly what to switch off
+- 🧯 **Rescue Mode** (Backup & Restore) undoes everything FireForge ever did to a TV in one go
+- 🔓 **Root extras**: CPU Performance Mode and a Magisk module that removes apps from the system image and blocks Amazon tracking servers
 - 🔄 **Safer, sturdier updates**: retries and a fallback when GitHub is busy, a progress readout while downloading, and the installer is checked (size, file type and SHA-256 checksum) before it runs
 - 🧹 **Definitions** download from the GitHub API first so you always get the newest list, are checked before use, and are **applied straight away** with no restart
+
+</details>
 
 <details>
 <summary>What was new in 1.0.3</summary>
@@ -57,13 +81,12 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 
 ## Highlights
 
-- 🖥️ **Five looks, five layouts** – pick one in Settings:
+- 📺 **Fire TV, Google TV, Android TV, NVIDIA Shield and other Android devices** – pick yours when FireForge starts; each gets its own lists, presets and tools
+- 🎚️ **Beginner / Advanced / Expert** – a switch in the top bar decides how much FireForge shows
+- 🖥️ **Two looks, two layouts** – pick one in Settings:
   - **HUD** – holographic cyan on near-black, a sidebar of cut-corner panels with glowing edges, arc gauges and rotating rings around the Health Check score
   - **Wasteland** – rusted, riveted steel and nitro orange, with a wooden **signpost** on the right for getting around (fold it down to icons for more room), stencil lettering and needle gauges
-  - **Radiation** – a nuclear bunker console: pages on a green CRT screen, **breaker switches** along the bottom to change section, emergency action switches, a contamination dial and an **incident log** on paper tape
-  - **Space** – deep space and nebula violet: sections are **planets on an orbit** across the top, their pages are moons, and everything shows through a starship viewport with a mission log underneath
-  - **Motherboard** – the inside of a PC: sections are chips on a green circuit board with copper traces, **RAM slots** across the top change section, pages are jumper headers, and a **POST code display** and LEDs show what's happening
-- 🧹 **Debloat** – switch off Amazon services one by one or with one-click presets, from *Safe* to *Extreme*, each with a risk rating. The package, command and tweak lists **update themselves from GitHub**, so new bloatware is covered without updating the app
+- 🧹 **Debloat** – switch off Amazon services one by one or with one-click presets, from *Safe* to *Extreme*, each with a risk rating. The package, command and tweak lists **update themselves from GitHub** at start-up and every day, so new bloatware is covered without updating the app
 - 🤖 **AI Assistant** – ask anything about your Fire TV, any app or setting, and get one-click suggestions you confirm. **Smart Debloat** reads what's on your TV and suggests what to switch off for how you use it. Runs free and privately on your own PC through [Ollama](https://ollama.com) – nothing is sent online
 - ☢️ **Nuke** – the most extreme option: switches off every Amazon app and service FireForge can, leaving only the core system, the home screen, the remote and keyboard. Snapshot first, type NUKE to confirm, and **Undo Nuke** switches it all back on
 - ⚡ **Quick Optimize** – faster menus, app pre-compiling, deep storage clean, network tune, background limits and memory saver, all reversible
@@ -76,7 +99,7 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - 🔔 **Runs in the tray** – minimise to the system tray with Windows notifications; scheduled maintenance keeps going
 - 💾 **Backup & Restore** – snapshots of apps and tweaked settings (automatic before big changes), compare, export/import, and APK backups you can reinstall
 - ↩️ **Changes & History** – a live list of everything switched off or tweaked on the TV (with one-click revert), and a timeline of every change FireForge made that you can undo
-- 🧭 **Setup wizard** – opens straight after installing: pick your look (HUD, Wasteland, Radiation, Space or Motherboard), then it walks you through connecting, a health check and a safe debloat
+- 🧭 **Setup wizard** – opens straight after installing: pick your look (HUD or Wasteland), then it walks you through connecting, a health check and a safe debloat
 - 🔔 **Quiet notifications** – results pop up and fade away on their own instead of dialog boxes
 - 🩺 **Health Check** – a score with one-click fixes, live CPU, memory, storage and temperature, and a shareable device report
 - 🔓 **Root & Recovery** – bootloader/root status, a pre-root checklist and the right guide for your exact model
@@ -106,6 +129,8 @@ FireForge checks GitHub for a new version every time it starts. Updates are requ
 4. In FireForge, type the IP in the top bar and press **Connect** — or press **Scan Network** to find Fire TVs on your network. If it finds more than one, you pick which to connect to (devices you've used before show their saved names).
 5. The first time, the TV asks *"Allow USB debugging?"* — tick **Always allow from this computer** and press **OK** with the remote.
 
+**Google TV, Android TV and Shield:** open **Settings → System → About** (Shield: **Device Preferences → About**) and click the build number 7 times, then switch on **USB debugging** (Shield: **Network debugging**) under **Developer options**. On Android 11 and newer, also switch on **Wireless debugging**, choose **Pair device with pairing code**, and use **Devices ▾ → Pair with code** in FireForge. The Google TV Streamer only allows wireless debugging with Ethernet unplugged.
+
 The first time you start FireForge, a **setup wizard** walks you through these steps, runs a health check and offers a safe debloat preset. You can run it again from **Settings → Connection**.
 
 FireForge remembers each device you connect to (see **Devices ▾** in the top bar), reconnects to the last one on start-up, and reconnects automatically if the connection drops — if Wi-Fi blips in the middle of a long operation, it reconnects and carries on where it left off.
@@ -114,7 +139,7 @@ FireForge remembers each device you connect to (see **Devices ▾** in the top b
 
 ## Features in detail
 
-The sidebar is grouped into **Overview** (Dashboard, Health Check, Benchmark), **Clean Up**, **Apps**, **Device**, **Safety & Undo** and **Advanced**, with **Settings** and **About** pinned at the bottom, plus an **AI** section. (The Wasteland, Radiation, Space and Motherboard looks lay the same sections out their own way.) Debloat Engine, Backup & Restore and Changes & History have tabs along the top. Press **Ctrl+K** to jump anywhere. When something finishes successfully, a small notification slides in at the bottom-right instead of a box you have to click away; only problems still stop you with a message.
+The sidebar is grouped into **Overview** (Dashboard, Health Check, Benchmark), **Clean Up**, **Apps**, **Device**, **Safety & Undo** and **Advanced**, with **Settings** and **About** pinned at the bottom, plus an **AI** section. (The Wasteland look lays the same sections out on its signpost.) Debloat Engine, Backup & Restore and Changes & History have tabs along the top. Press **Ctrl+K** to jump anywhere. When something finishes successfully, a small notification slides in at the bottom-right instead of a box you have to click away; only problems still stop you with a message.
 
 Before an option changes something on your Fire TV, FireForge tells you what will happen and how to undo it. When a preset or selection includes a service that's risky to switch off (the home screen, Appstore, WebView, account sign-in, voice), it says what will stop working, with an extra warning on Fire OS versions where it's riskier, such as the 2022 updates that block other launchers from replacing the home screen. Presets and debloats also show how much memory the apps you're switching off are using right now. You can switch these warnings off in **Settings → Safety**; removing apps, presets and other big changes always ask.
 
@@ -166,7 +191,7 @@ One-click tune-ups that work on every model:
 - **Background Limits** – stops Amazon extras (Photos, Music, Freevee, Silk and others) running in the background
 - **Memory Saver** – keeps fewer apps cached so the one you're using gets more RAM (Fire OS 7 and newer)
 - **Revert to Stock** – puts everything back, including Network Tune, Background Limits and Memory Saver
-- **What's Using Memory & Storage** – every app's memory use right now (stop or switch off any of them) and its app, data and cache size
+- **Bloat Finder & Storage** – Amazon apps ranked by what they really cost (memory, CPU, background services, scheduled jobs and data), with one-click switch-off, plus every app's app, data and cache size
 - **Sleep & Screensaver Timers** – any screensaver start time from 1 minute to never, and a sleep timer from 5 minutes to never (Fire OS has no sleep setting of its own). A few newer models ignore custom timers
 - **TV Control over HDMI (CEC)** – switch it on or off, for when the TV keeps turning itself on
 - A live **Current State** card shows how the device is tuned right now: nine readings with green/amber lights and an overall tuning score
@@ -296,7 +321,8 @@ FireForge **never** runs exploits, roots or flashes anything automatically — t
 - **Connection** – reconnect on start-up, connection watchdog and how often it checks, default ADB port, run the setup wizard again
 - **Safety** – warnings before options change the TV, change history on/off, APK backup before removing, automatic snapshots before big changes, confirm before reboot or shut-down, show the terms notice only once, forget the list of protected apps
 - **Background & Start-up** – try other saved Fire TVs if the last one doesn't answer, Wake-on-LAN before connecting (Fire TV Cube), minimise to the system tray, Windows notifications, and the after-update check
-- **Interface** – theme (**HUD**, **Wasteland**, **Radiation**, **Space** or **Motherboard**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
+- **Device Type** – which kind of TV FireForge is set up for, whether to ask every time it starts, and a check of the connected device
+- **Interface** – theme (**HUD** or **Wasteland**), **compact layout** for small laptop screens, remember window size, which page opens at start-up, refresh speeds for live stats, logs and the Remote Control view
 - **Logging** – timestamps, and saving the log to a file (one per day)
 - **Updates** – check now, release notes, and **Copy Diagnostics** for bug reports. FireForge and its **debloat definitions** (bloatware, commands, tweaks and presets) update automatically from GitHub every time it starts, with a **Check for New Definitions** button
 - **AI (Ollama)** – the Ollama address, a connection test and a link to download Ollama (free)
@@ -335,6 +361,15 @@ FireForge works with Fire TV devices running Fire OS 5, 6, 7 or 8 that have **AD
 Fire TV Stick (all generations), Fire TV Stick Lite, Fire TV Stick 4K, Fire TV Stick 4K Max (including the 2023 model, "Karat"), Fire TV Cube, Fire TV boxes and Fire TV Edition smart TVs.
 
 Newer Fire TV devices running **Vega OS** (not Android-based) are not supported. Some packages are protected by Fire OS on newer firmware and can't be disabled without root — FireForge tells you when that happens.
+
+From 1.1.0 FireForge also works with:
+
+- **Google TV** – Chromecast with Google TV, Google TV Streamer, Onn 4K / 4K Pro and TVs with Google TV (TCL, Sony, Hisense and others)
+- **Android TV** – TVs and boxes with the classic Android TV home, such as Sony Bravia, Philips, Sharp, TCL and the Xiaomi Mi Box
+- **NVIDIA Shield** – Shield TV and Shield TV Pro
+- **Other Android devices** with ADB – boxes, projectors and tablets
+
+The Google TV, Android TV and Shield lists come from community guides and are marked by risk; FireForge's Bloat Finder shows everything else your model runs. Tested model profiles are added through the definitions file as people report back.
 
 ---
 
