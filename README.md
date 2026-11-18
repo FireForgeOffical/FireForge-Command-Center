@@ -40,42 +40,6 @@ Every change is reversible. FireForge never deletes Amazon's system files.
 - 🎚️ **Beginner / Advanced / Expert** switch in every look – in the top bar in HUD and Wasteland, in the menu in the new looks
 - 🧪 More automated checks: every look is tested for readable text and clear buttons before each release
 
-<details>
-<summary>What was new in 1.2.0</summary>
-
-- ⚡ **Much faster clean-ups**: presets, services, Restore All, the Nuke, batch mode and Health Check fixes now switch apps off in groups instead of one at a time, and skip anything that's already off or not on your TV
-- ✅ **Every change is checked on the TV**: FireForge reads the TV back after each group, gives anything that didn't change the full treatment (root, suspend, removal), and checks again a few seconds later for apps the system quietly switched back on
-- 🔌 **Carries on after a dropped connection**: if the TV falls off Wi-Fi mid-job, FireForge waits up to a minute for it and continues where it stopped
-- 👀 **Preview before you apply**: a dry run shows exactly what will switch off, what's already off, what isn't on this TV and what stays on to protect it – with the risky ones first and what stops working
-- 📸 **Always a snapshot before risky changes**: Aggressive and Extreme presets and services take a restore point even if automatic snapshots are off
-- 📉 **Before and after**: results show free memory before and after the clean-up
-- 🤝 **Share how it went (optional)**: after a clean-up on Google TV, Android TV, Shield or other devices – or whenever something didn't work – FireForge can open a pre-filled, anonymous GitHub report for your model, so the lists get better for everyone
-- 🔗 **Share codes**: Export Profile → Copy a share code turns your setup into one line of text; Import Profile → Paste a share code loads someone else's
-- 💤 **Unused apps**: Bloat Finder now works on every TV, shows when you last opened each app, and **Pick Unused** selects the ones you haven't opened in a month
-- 📡 **Easier first connection**: Scan Network also finds Google TV and Android TV with wireless debugging on, and offers pairing with a code when nothing answers
-- ⌨️ **Command-line mode**: `FireForge.exe --list-presets` shows the presets, then `FireForge.exe --preset "<name>" --ip 192.168.1.20 --yes` applies one; `--restore-preset` and `--restore-all` undo – the same checked engine, no window
-- 🧪 **Automated checks**: every release build first checks the lists, presets, safety rules, share codes and the definitions file, and builds nothing if one fails
-- 🗣️ Messages read right on every device ("an Android TV", not "a Android TV")
-
-</details>
-
-<details>
-<summary>What was new in 1.1.0</summary>
-
-- 📺 **Every TV, not just Fire TV**: when FireForge starts it asks which device you're using – **Fire TV**, **Google TV**, **Android TV**, **NVIDIA Shield** or **another Android device** – and loads that device's debloat lists, presets and tools. When you connect, it checks what the TV really is and offers to switch if it's something else (change it any time in **Settings → Device Type**)
-- 🌈 **Google TV and Android TV lists**: Android's ad services and ad personalisation, the recommendation and sponsored rows, Google telemetry and feedback, unused Google apps, Ambient mode, Assistant and voice, and the phone leftovers that do nothing on a TV (printing, SIM, call and sample apps) – each with a risk rating and ready-made Safe, Recommended and Aggressive presets
-- 🎮 **NVIDIA Shield**: its own list and a **Shield Gaming Mode** preset that fixes controller buttons in Xbox Cloud Gaming and frees memory, while GeForce NOW and controllers keep working
-- 🏭 **TV makers**: Xiaomi PatchWall extras load automatically on Xiaomi TVs and boxes, and the TCL, Sony, Xiaomi and Shield services that inputs, remotes and updates need are **always kept on**
-- 📦 **Other Android devices** get a full general list (ads, telemetry, Google extras and phone leftovers) that works on any box, projector or tablet
-- 🛡️ **Never-touch protection**: on every non-Fire device FireForge refuses to switch off the things that would leave it unusable – Play Services, the Play Store, keyboards, inputs, the remote service and the location service
-- 🔑 **Pair with code** (Devices ▾) for Google TV and Android TV on Android 11 and newer, and FireForge finds the new wireless debugging port by itself after the TV restarts
-- 🏠 **Launcher swap**: set another home screen, and on Google TV / Android TV **switch the stock home (and its ads) off** – only once the new one answers the Home button, so you can't be left with a black screen
-- 🎚️ **Beginner / Advanced / Expert switch** in the top bar: Beginner shows only safe and recommended presets and the everyday pages; Advanced adds aggressive options, the extra tools and the Terminal; Expert shows everything, including Extreme options and Root & Recovery
-- 🔄 **Debloat definitions update every day**: as well as at start-up, FireForge checks GitHub for new lists once a day while it's open (even in the tray), and switches to a new list as soon as nothing is ticked and no job is running – no restart needed. Switch it off with **Check every day** in **Settings → Updates**
-- 🎨 **Two looks**: HUD and Wasteland. The Radiation, Space and Motherboard looks have been retired
-
-</details>
-
 ## Highlights
 
 - 📺 **Fire TV, Google TV, Android TV, NVIDIA Shield and other Android devices** – pick yours when FireForge starts; each gets its own lists, presets and tools
@@ -364,7 +328,7 @@ Fire TV Stick (all generations), Fire TV Stick Lite, Fire TV Stick 4K, Fire TV S
 
 Newer Fire TV devices running **Vega OS** (not Android-based) are not supported. Some packages are protected by Fire OS on newer firmware and can't be disabled without root — FireForge tells you when that happens.
 
-From 1.1.0 FireForge also works with:
+FireForge also works with:
 
 - **Google TV** – Chromecast with Google TV, Google TV Streamer, Onn 4K / 4K Pro and TVs with Google TV (TCL, Sony, Hisense and others)
 - **Android TV** – TVs and boxes with the classic Android TV home, such as Sony Bravia, Philips, Sharp, TCL and the Xiaomi Mi Box
