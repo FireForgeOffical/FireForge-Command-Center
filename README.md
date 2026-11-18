@@ -2,9 +2,9 @@
 
 **A free advanced Windows toolkit to debloat, speed up, protect and control Fire TV, Google TV, Android TV and NVIDIA Shield devices — no root needed.**
 
-FireForge connects to your TV over your home Wi-Fi using ADB (Android Debug Bridge) and gives you one dark, modern dashboard to switch off Amazon's bloat and tracking, block forced updates, install apps, control the TV from your PC and keep everything the way you set it up.
+FireForge connects to your TV over your home Wi-Fi using ADB (Android Debug Bridge) modern dashboard to switch off bloatware and tracking, block forced updates, install apps, control the TV from your PC and keep everything the way you set it up.
 
-Every change is reversible. FireForge never deletes Amazon's system files.
+Every change is reversible. FireForge never deletes system files.
 
 > FireForge is free software and is **not affiliated with, endorsed by or sponsored by Amazon, Google or NVIDIA**. "Amazon", "Fire TV" and "Fire TV Stick" are trademarks of Amazon.com, Inc. or its affiliates. "Google TV" and "Android TV" are trademarks of Google LLC. "NVIDIA" and "SHIELD" are trademarks of NVIDIA Corporation.
 
@@ -54,13 +54,13 @@ Every change is reversible. FireForge never deletes Amazon's system files.
   - **Wasteland** – rusted, riveted steel and nitro orange, with a wooden **signpost** on the right for getting around (fold it down to icons for more room), stencil lettering and needle gauges
 - 🧹 **Debloat** – switch off services one by one or with one-click presets, from *Safe* to *Extreme*, each with a risk rating. The package, command and tweak lists **update themselves from GitHub** at start-up and every day, so new bloatware is covered without updating the app
 - 🤖 **AI Assistant** – ask anything about your Fire TV, any app or setting, and get one-click suggestions you confirm. **Smart Debloat** reads what's on your TV and suggests what to switch off for how you use it. Runs free and privately on your own PC through [Ollama](https://ollama.com) – nothing is sent online
-- ☢️ **Nuke** – the most extreme option: switches off every Amazon app and service FireForge can, leaving only the core system, the home screen, the remote and keyboard. Snapshot first, type NUKE to confirm, and **Undo Nuke** switches it all back on
+- ☢️ **Nuke** – the most extreme option: switches off every app and service FireForge can, leaving only the core system, the home screen, the remote and keyboard. Snapshot first, type NUKE to confirm, and **Undo Nuke** switches it all back on
 - ⚡ **Quick Optimize** – faster menus, app pre-compiling, deep storage clean, network tune, background limits and memory saver, all reversible
 - 🛡️ **Shields, DNS & VPN** – block forced Fire OS updates, encrypted ad-blocking DNS, ad-tracking and Wi-Fi-scan controls, plus VPN set-up: install WireGuard, send it a config, and switch on always-on VPN with a kill switch
 - 📦 **App Store** – 67 popular TV apps installed straight from their official sources, with update checks, plus drag-and-drop APK sideloading
 - 🎮 **Remote Control** – a live view of the TV screen, a full remote, typing from your PC, screenshots and screen recording; your keyboard becomes the remote
 - 🔁 **Batch & maintenance** – apply a setup to several Fire TVs at once, compare two TVs and copy one's setup to the other, and keep each one tidy on a timer
-- 🔄 **After-update check** – when Amazon updates Fire OS, FireForge spots what it switched back on and puts it back in one click
+- 🔄 **After-update check** – when Amazon updates Fire OS, GoogleTV and so on, FireForge spots what it switched back on and puts it back in one click
 - 🔎 **Quick search** – press **Ctrl+K** to jump to any page, tool, preset, service or app
 - 🔔 **Runs in the tray** – minimise to the system tray with Windows notifications; scheduled maintenance keeps going
 - 💾 **Backup & Restore** – snapshots of apps and tweaked settings (automatic before big changes), compare, export/import, and APK backups you can reinstall
@@ -124,7 +124,7 @@ Before an option changes something on your Fire TV, FireForge tells you what wil
 ### ⏱️ Benchmark
 
 - Times how fast a few of your apps open from cold and records free memory, free storage, running processes and how many apps are switched on
-- **Run Before** while the Fire TV is still stock, debloat and optimize, then **Run After & Compare** – the results table shows both runs side by side with the change (green better, amber worse)
+- **Run Before** while the device is still stock, debloat and optimize, then **Run After & Compare** – the results table shows both runs side by side with the change (green better, amber worse)
 - Results are kept per TV; **Copy Results** puts them on the clipboard to share
 
 ### 🧹 Debloat Engine
